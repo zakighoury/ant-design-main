@@ -1,10 +1,11 @@
 "use client";
 
 import React, { useState, ChangeEvent, FormEvent } from "react";
-import { useDispatch } from "react-redux";
+import { useAppDispatch } from "@/lib/hooks";
 import { addBuilding } from "../../../../lib/features/action/building"; // Adjust the path as necessary
 import "./style.css";
 import Cookies from "js-cookie";
+import Image from "next/image";
 
 interface Slot {
   number: number;
@@ -39,7 +40,7 @@ const AddBuildingForm: React.FC = () => {
   const [imageFile, setImageFile] = useState<File | null>(null);
   const [imagePreview, setImagePreview] = useState<string>("");
 
-  const dispatch = useDispatch();
+  const dispatch = useAppDispatch();
 
   // Assuming you have a method to get the current user's role from a Redux store or context
   // const userRole = Cookies.get("role");
@@ -140,7 +141,7 @@ const AddBuildingForm: React.FC = () => {
         />
         {imagePreview && (
           <div className="imagePreviewContainer">
-            <img src={imagePreview} alt="Preview" className="imagePreview" />
+            <Image src={imagePreview} alt="Preview" className="imagePreview" />
           </div>
         )}
         <input

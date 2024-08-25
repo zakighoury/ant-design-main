@@ -5,7 +5,6 @@ import axios from "axios";
 import Cookies from "js-cookie";
 import { InfoCircleOutlined } from '@ant-design/icons';
 import "./SlotManagementPage.css";
-
 const { Title } = Typography;
 const { Panel } = Collapse;
 

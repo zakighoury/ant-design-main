@@ -6,7 +6,9 @@ import { format } from 'date-fns';
 const DateTimeForm = () => {
   const [form] = Form.useForm();
 
-  const onFinish = (values) => {
+  const onFinish = (
+    values: any
+  ) => {
     console.log('Received values of form:', {
       ...values,
       dateTime: format(values.dateTime.toDate(), 'yyyy-MM-dd HH:mm:ss')

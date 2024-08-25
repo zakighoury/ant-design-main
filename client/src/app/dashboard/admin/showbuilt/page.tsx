@@ -15,7 +15,7 @@ import {
 } from "antd";
 import axios from "axios";
 import Cookies from "js-cookie";
-
+import Image from "next/image";
 const { Panel } = Collapse;
 const { Title } = Typography;
 
@@ -288,7 +288,7 @@ const BuildingManagementPage: React.FC = () => {
             <List.Item key={building._id}>
               <Collapse accordion>
                 <Panel header={building.name} key={building._id}>
-                  <img
+                  <Image
                     src={building.ImgUrl}
                     alt={building.name}
                     style={{ width: "100%" }}
@@ -303,7 +303,8 @@ const BuildingManagementPage: React.FC = () => {
                     Edit Building
                   </Button>
                   <Button
-                    type="danger"
+                    type="default"
+                    danger
                     onClick={() => handleDeleteBuilding(building._id)}
                     disabled={!canBeDeleted}
                   >
@@ -311,7 +312,7 @@ const BuildingManagementPage: React.FC = () => {
                   </Button>
                   {building.floors.map((floor) => (
                     <Collapse key={floor.number}>
-                      <Panel header={`Floor ${floor.number}`}>
+                      <Panel key={floor.number} header={`Floor ${floor.number}`}>
                         <Button
                           type="primary"
                           onClick={() => showFloorModal(building, floor)}
@@ -319,7 +320,8 @@ const BuildingManagementPage: React.FC = () => {
                           Edit Floor
                         </Button>
                         <Button
-                          type="danger"
+                          type="default"
+                          danger
                           onClick={() =>
                             handleDeleteFloor(building._id, floor.number)
                           }
@@ -336,7 +338,8 @@ const BuildingManagementPage: React.FC = () => {
                               Edit Slot
                             </Button>
                             <Button
-                              type="danger"
+                              type="default"
+                              danger
                               onClick={() =>
                                 handleDeleteSlot(
                                   building._id,

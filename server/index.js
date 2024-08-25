@@ -7,24 +7,24 @@ const server = http.createServer(app); // Create HTTP server
 const io = socketIo(server, {
   cors: {
     origin: "http://localhost:3000",
-    methods: ["GET", "POST", "PUT","PATCH", "DELETE"],
-    credentials: true
+    methods: ["GET", "POST", "PUT", "PATCH", "DELETE"],
+    credentials: true,
   },
 });
 
 const PORT = process.env.PORT || 8000;
 
-io.on('connection', (socket) => {
-  console.log('a user connected');
-  socket.on('disconnect', () => {
-    console.log('user disconnected');
+io.on("connection", (socket) => {
+  console.log("a user connected");
+  socket.on("disconnect", () => {
+    console.log("user disconnected");
   });
 });
 
 module.exports = { io };
 
-const buildingdetailRoutes = require("./routes/buildingdetailsRoutes.js")
-const adminbuildingsRouter = require('./routes/adminBuilding.js');
+const buildingdetailRoutes = require("./routes/buildingdetailsRoutes.js");
+const adminbuildingsRouter = require("./routes/adminBuilding.js");
 const buildingroutes = require("./routes/buidlingroutes");
 // Configuring Middlewares
 const useMiddlewares = require("./utils/useMiddlewares");
@@ -35,8 +35,11 @@ const useRoutes = require("./utils/useRoutes.js");
 useRoutes(app);
 app.use("/api", buildingroutes);
 app.use("/api/customer", buildingdetailRoutes);
-app.use('/admin/api/buildings', adminbuildingsRouter);
+app.use("/admin/api/buildings", adminbuildingsRouter);
 // Connecting to MongoDB
+app.get("/", (req, res) => {
+  res.send("Hello World!");
+});
 const connectDB = require("./utils/db");
 connectDB().then(() => {
   // Starting Server
@@ -44,4 +47,3 @@ connectDB().then(() => {
     console.log(`Server is running on port ${PORT}`);
   });
 });
-

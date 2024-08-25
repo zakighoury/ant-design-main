@@ -105,7 +105,7 @@ export default function SignInPage() {
                 </Form.Item>
                 <div className="signin-footer">
                   <Text style={{ fontSize: "18px" }}>
-                    Don't have an account? <Link href="/signup">Sign Up</Link>
+                    Don&apos; have an account? <Link href="/signup">Sign Up</Link>
                   </Text>
                 </div>
               </Form>

@@ -27,9 +27,11 @@ import {
 import { socket } from "../../../socket";
 import dayjs, { Dayjs } from "dayjs";
 import { useAppDispatch, useAppSelector } from "@/lib/hooks";
+import Image from "next/image";
 import "../buildingdetail.css";
 const { Title, Paragraph } = Typography;
 const { Panel } = Collapse;
+
 
 interface Building {
   _id: string;
@@ -328,7 +330,7 @@ const BuildingDetails = ({ params }: { params: { id: string } }) => {
         {building ? (
           <Card
             cover={
-              <img
+              <Image
                 alt={building.name}
                 src={building.ImgUrl}
                 style={{ maxHeight: "300px", objectFit: "fill" }}
