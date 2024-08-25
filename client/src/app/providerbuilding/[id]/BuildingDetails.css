@@ -1,0 +1,164 @@
+.site-layout-background {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: space-between;
+  padding: 20px 400px;
+  align-items: center;
+  background: #f9f9f9;
+  /* padding: 40px; */
+  gap: 50px;
+  min-height: 100vh;
+}
+.building-image-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  /* width: 100%; */
+}
+
+.building-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.building-title {
+  text-transform: capitalize;
+  font-size: 36px;
+  font-weight: bold;
+  color: #333;
+}
+
+.address,
+.price {
+  font-size: 20px;
+  color: #777;
+}
+
+.description {
+  font-size: 18px;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+.floor-container {
+  margin-bottom: 30px;
+  width: 100%;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.floor-title {
+  margin-bottom: 15px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+}
+
+.slot-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.slot-tag {
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-size: 16px;
+}
+
+.slot-tag.available {
+  background-color: #52c41a;
+  color: white;
+}
+
+.slot-tag.reserved {
+  background-color: #ff4d4f;
+  color: white;
+}
+
+.buy-button,
+.leave-button {
+  margin-top: 20px;
+  width: 100%;
+  font-size: 18px;
+  height: 50px;
+  border-radius: 8px;
+}
+
+.buy-button {
+  background-color: #1890ff;
+  color: white;
+  border: none;
+}
+
+.leave-button {
+  background-color: #ff4d4f;
+  color: white;
+  border: none;
+}
+/* ReservationDetails.css */
+
+.reservation-details-container {
+  padding: 24px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  max-width: 600px;
+  margin: auto;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 24px;
+}
+
+.reservation-detail {
+  margin-bottom: 24px;
+  padding: 16px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  border: 1px solid #e1e1e1;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.reservation-detail p {
+  margin: 0;
+  font-size: 15px;
+  color: #555;
+}
+
+.reservation-detail strong {
+  color: #333;
+}
+
+.reservation-detail .cancel-button {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 16px;
+}
+
+.reservation-detail .cancel-button .ant-btn {
+  background: #d9534f;
+  color: #fff;
+  border-color: #d9534f;
+}
+
+.reservation-detail .cancel-button .ant-btn:hover {
+  background: #c9302c;
+  border-color: #c9302c;
+}
+
+.no-reservations {
+  text-align: center;
+  font-size: 16px;
+  color: #888;
+  margin-top: 20px;
+}
+

@@ -1,0 +1,119 @@
+/* style.css */
+
+/* Global Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+/* Container Styles */
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #c7c7ff; ;
+  background-image: url("./1677697560.jpg");
+}
+
+
+
+.signup-content {
+  
+  max-width: 600px;
+  width: 600px;
+  background-color:#F0F0F0;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Form Styles */
+.signup-form {
+  padding: 43px;
+}
+
+.signup-form .text-center {
+  margin-bottom: 20px;
+}
+
+/* Social Login Styles */
+.social-login {
+  margin-bottom: 30px;
+}
+
+.social-login .google-btn {
+  /* margin-bottom: 20px; */
+  background-color: #4285f4;
+  color: #ffffff;
+  border: none;
+}
+
+.social-login .google-btn:hover {
+  background-color: #3f76e0;
+}
+
+/* Or Divider Styles */
+.or-divider {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.or-divider .border-line {
+  flex: 1;
+  border-top: 1px solid #e0e0e0;
+}
+
+.or-divider .or-text {
+  margin: 0 10px;
+  color: #a0a0a0;
+  font-size: 14px;
+}
+
+/* Sign In Link Styles */
+.signin-link {
+  font-weight: 600;
+  color: #000;
+}
+
+.signin-link:hover {
+  text-decoration: underline;
+}
+
+/* Override Ant Design Button Styles */
+.ant-btn.ant-btn-primary.ant-btn-block {
+  background-color: #333;
+  color: white;
+  border: none;
+  margin-bottom:15px;
+  padding: 27px;
+  border-radius: 40px;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+}
+
+.ant-btn.ant-btn-primary.ant-btn-block:hover {
+  background-color: #000;
+}
+/* style.css */
+.ant-input-outlined,
+.ant-input-password,
+.ant-select-outlined
+ {
+  height: 60px; /* Increase the height of the input fields */
+  font-size: 18px; /* Adjust the font size for the input text */
+  letter-spacing: 2px;
+
+}
+
+.anticon svg {
+  width: 45px; 
+  height: 37px; 
+  margin-right: 10px;
+} 
+
+.ant-select-selector .ant-select-selection-item {
+  display: flex;
+  align-items: center;
+}

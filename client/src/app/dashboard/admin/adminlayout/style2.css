@@ -1,0 +1,19 @@
+.menu-item-active {
+  background: #061c31 !important;
+  color: #fff !important;
+}
+
+.header {
+  background: #001529;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.header-center h1 {
+  color: #fff;
+  margin: 0;
+  font-size: 24px;
+}

@@ -1,0 +1,62 @@
+.container {
+  padding: 20px;
+}
+
+.title {
+  margin-bottom: 20px;
+}
+
+.spin-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.slot-item {
+  margin-bottom: 20px;
+}
+
+.slot-card {
+  border-radius: 8px;
+  transition: box-shadow 0.3s ease;
+}
+
+.slot-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.status-indicator {
+  font-weight: bold;
+  padding: 5px;
+  border-radius: 4px;
+  color: white;
+}
+
+.status-indicator.reserved {
+  background-color: #ff4d4f; /* Red for reserved */
+}
+
+.status-indicator.available {
+  background-color: #52c41a; /* Green for available */
+}
+
+.slot-info p {
+  margin: 0;
+}
+
+.available-text {
+  color: green;
+}
+
+.ant-card {
+  border-radius: 8px;
+}
+
+.ant-collapse .ant-collapse-item {
+  border-radius: 8px;
+}
+
+.slot-details-modal .ant-modal-body {
+  padding: 20px;
+}

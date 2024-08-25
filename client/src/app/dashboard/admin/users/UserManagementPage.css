@@ -1,0 +1,81 @@
+.user-management-container {
+  padding: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.title {
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.search-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.add-user-button {
+  margin-left: 20px;
+  background-color: #1890ff;
+  border-color: #1890ff;
+  font-weight: bold;
+}
+
+.ant-table {
+  margin-top: 20px;
+  font-size: 14px;
+
+}
+/* .ant-table-cell {
+} */
+.ant-table-thead > tr > th {
+  background-color: #f0f2f5;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.ant-table-tbody > tr > td {
+  padding: 16px;
+  text-transform: capitalize;
+}
+
+.avatar-placeholder {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #f0f2f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  color: #fff;
+}
+
+.user-management-modal .ant-modal-body {
+  padding: 20px;
+}
+
+.user-management-modal .ant-form-item-label {
+  font-weight: 600;
+}
+
+.user-management-modal .ant-form-item-control-input {
+  font-size: 14px;
+}
+
+.ant-btn-primary {
+  background-color: #1890ff;
+  border-color: #1890ff;
+  font-weight: bold;
+}
+
+.ant-btn-primary:hover {
+  background-color: #40a9ff;
+  border-color: #40a9ff;
+}
+
+.ant-btn-danger {
+  font-weight: bold;
+}

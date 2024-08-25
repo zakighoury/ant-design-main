@@ -1,0 +1,37 @@
+.user-management-container-chart-customer {
+    background-color: #f0f2f5;
+    padding: 16px;
+  }
+  
+  .title-chart-customer {
+    text-align: left;
+    font-weight: 500;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: rgb(182, 182, 12); /* Ant Design primary color */
+  }
+  
+  .user-info-customer {
+    display: flex;
+    gap: 41px;
+    align-items: center;
+    background-color: #ffffff; /* White background for the user info box */
+    padding: 10px 32px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for a lifted effect */
+  }
+  
+  .user-icon-customer {
+    font-size: 2.5rem;
+    color: white;
+    background-color: lightblue; /* Background color specific to customers */
+    padding: 7px 7px;
+    border-radius: 50px;
+  }
+  
+  .user-count-customer {
+    font-size: 2.5rem; /* Larger text size for emphasis */
+    font-weight: bold;
+    margin: 0;
+  }
+  

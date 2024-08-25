@@ -1,0 +1,20 @@
+/* buildingList.css */
+
+.loading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .building-list-container {
+    padding: 20px;
+    /* display:flex; */
+  }
+  
+  .building-image {
+    width: 100%; /* Adjust this value as needed */
+    height: 200px; /* Adjust this value as needed */
+    object-fit: cover; /* Ensures the image covers the area without stretching */
+  }
+  

@@ -1,0 +1,61 @@
+/* General background for the login page */
+.admin-login-background {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #f3f4f6; /* bg-gray-100 */
+  }
+  
+  /* Container holding the card */
+  .admin-login-container {
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    max-width: 28rem; /* max-w-md */
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1); /* shadow-lg */
+    background-color: rgba(255, 255, 255, 0.9); /* bg-white bg-opacity-90 */
+    border-radius: 0.5rem; /* rounded-lg */
+  }
+  
+  /* Card styling */
+  .admin-login-card {
+    width: 100%;
+    max-width: 28rem; /* max-w-md */
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1); /* shadow-lg */
+  }
+  
+  /* Card header styling */
+  .admin-login-card-header {
+    padding: 1rem; /* p-4 */
+    background-color: #fff; 
+    color: white;
+    border-top-left-radius: 0.5rem; /* rounded-t-lg */
+    border-top-right-radius: 0.5rem; /* rounded-t-lg */
+  }
+  
+  /* Card title styling */
+  .admin-login-card-title {
+    font-size: 1.5rem; /* text-2xl */
+  }
+  
+  /* Card content styling */
+  .admin-login-card-content {
+    display: grid;
+    gap: 1rem; /* gap-4 */
+    padding: 1.5rem; /* p-6 */
+  }
+  
+  /* Input group styling */
+  .admin-login-input-group {
+    display: grid;
+    gap: 0.5rem; /* gap-2 */
+  }
+  
+  /* Card footer styling */
+  .admin-login-card-footer {
+    padding: 1.5rem; /* p-6 */
+    background-color: #e5e7eb; /* bg-black-100 */
+  }
+  

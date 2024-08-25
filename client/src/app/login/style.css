@@ -1,0 +1,116 @@
+/* style.css */
+.signin-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* width: 100%; */
+  height: 100vh;
+  background: #c7c7ff;
+  background-image: url("./1677697560.jpg");
+}
+
+.signin-form-container {
+  width: 500px;
+  max-width: 500px;
+  height: 100%;
+  padding: 24px;
+  background-color: #f0f0f0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+}
+
+.signin-form {
+  /* width: 100%; */
+}
+.google-btn {
+  display: flex;
+  align-items: center;
+}
+.signin-title {
+  padding-bottom: 20px;
+  text-align: center;
+}
+.signin-button {
+  width: 100%;
+}
+/* Style.css */
+
+.ant-input-outlined,
+.ant-input-password {
+  height: 70px; /* Adjust as needed */
+  font-size: 18px; /* Adjust as needed */
+  letter-spacing: 2px;
+}
+
+.ant-input-prefix,
+.ant-input-suffix {
+  height: 50px; /* Match input height */
+}
+
+ .anticon svg {
+  width: 45px; 
+  height: 37px; 
+  margin-right: 10px;
+} 
+
+.ant-input-prefix {
+  line-height: 50px; /* Align icon vertically */
+}
+
+.signin-footer {
+  text-align: center;
+  margin-top: 12px;
+}
+
+.signin-google-button {
+  text-align: center;
+  margin-top: 24px;
+}
+
+.google-signin-button {
+  background-color: #4285f4;
+  border-color: #4285f4;
+  color: white;
+}
+
+.google-signin-button:hover {
+  background-color: #357ae8;
+  border-color: #357ae8;
+}
+.or-divider {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.or-divider .border-line {
+  flex: 1;
+  border-top: 1px solid #e0e0e0;
+}
+
+.or-divider .or-text {
+  margin: 0 10px;
+  color: #a0a0a0;
+  font-size: 14px;
+}
+/* Override Ant Design Button Styles */
+.ant-btn.ant-btn-primary.ant-btn-block {
+  background-color: #333;
+  color: white;
+  border: none;
+  margin-bottom: 30px;
+  padding: 27px;
+  border-radius: 40px;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+}
+
+.ant-btn.ant-btn-primary.ant-btn-block:hover {
+  background-color: #000;
+}
+
+/* .anticon svg {
+  width: 50px;
+  height: 27px;
+  display: inline-block;
+} */

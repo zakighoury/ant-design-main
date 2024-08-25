@@ -1,0 +1,37 @@
+.user-management-container-chart-provider {
+  /* width: 13%; */
+  background-color: #f0f2f5;
+  padding: 16px;
+}
+
+.title-chart-provider {
+  text-align: left;
+  font-weight: 500;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #444; /* Ant Design primary color */
+}
+
+.user-info-provider {
+  display: flex;
+  gap: 41px;
+  align-items: center;
+  background-color: #ffffff; /* White background for the user info box */
+  padding: 10px 32px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for a lifted effect */
+}
+
+.user-icon-provider {
+  font-size: 2.5rem;
+  color: white;
+  background-color: lightgreen;
+  padding: 7px 7px;
+  border-radius: 50px;
+}
+
+.user-count-provider {
+  font-size: 2.5rem; /* Larger text size for emphasis */
+  font-weight: bold;
+  margin: 0;
+}

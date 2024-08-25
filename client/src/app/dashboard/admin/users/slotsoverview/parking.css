@@ -1,0 +1,23 @@
+/* Basic styling for the overview page */
+.overview-container {
+    padding: 20px;
+    background-color: #f5f5f5;
+  }
+  
+  .title {
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .stat-card {
+    text-align: center;
+    background-color: #fff;
+  }
+  
+  .spin-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  

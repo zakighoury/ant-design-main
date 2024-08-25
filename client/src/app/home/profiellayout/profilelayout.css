@@ -1,0 +1,20 @@
+/* SidebarMenu.css */
+.sidebar {
+    background-color: white !important; /* Set sidebar background to white */
+    color: black; /* Adjust text color to ensure readability */
+  }
+  
+  .sidebar .ant-menu-item {
+    color: black; /* Ensure menu items have a readable color */
+  }
+  
+  .sidebar .ant-menu-item-selected {
+    background-color: #f0f0f0 !important; /* Optional: Background color for selected item */
+  }
+  
+  .sidebar .logo {
+    padding: 16px;
+    background-color: white;
+    text-align: center;
+  }
+  

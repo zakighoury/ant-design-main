@@ -1,0 +1,63 @@
+
+
+.custom-panel-header {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+}
+.building-details-card {
+  text-align: left;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  padding: 16px;
+  font-family: 'Arial', sans-serif;
+}
+
+.building-cover-img {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.building-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 16px;
+}
+
+.building-address {
+  font-size: 20px;
+  color: #555;
+  margin-bottom: 12px;
+  word-break:keep-all 
+}
+
+.building-description {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 16px;
+}
+
+.building-price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 16px;
+}
+
+.leave-building-button {
+  background-color: #ff4d4f;
+  border-color: #ff4d4f;
+  font-size: 16px;
+  padding: 10px 20px;
+}
+
+.leave-building-button:hover {
+  background-color: #ff7875;
+  border-color: #ff7875;
+}
+
+.building-slots-collapse {
+  border-top: 1px solid #f0f0f0;
+  margin-top: 16px;
+}

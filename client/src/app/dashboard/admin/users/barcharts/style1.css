@@ -1,0 +1,77 @@
+.user-management-container-chart {
+  background-color: #f9f9f9;
+  padding: 32px;
+  border-radius: 16px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  margin-bottom: 32px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.user-management-container-chart:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.title-chart {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 24px;
+  color: #1a202c;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: #2d3748;
+  padding: 12px 24px;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.user-info:hover {
+  background-color: #edf2f7;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.user-icon {
+  font-size: 30px;
+  margin-right: 16px;
+  color: #3182ce;
+}
+
+.user-count {
+  font-weight: 700;
+  font-size: 22px;
+  color: #2b6cb0;
+}
+
+@media (max-width: 768px) {
+  .user-management-container-chart {
+    padding: 24px;
+  }
+
+  .title-chart {
+    font-size: 24px;
+  }
+
+  .user-info {
+    font-size: 18px;
+    padding: 10px 20px;
+  }
+
+  .user-icon {
+    font-size: 28px;
+    margin-right: 12px;
+  }
+
+  .user-count {
+    font-size: 20px;
+  }
+}

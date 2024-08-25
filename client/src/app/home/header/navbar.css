@@ -1,0 +1,148 @@
+/* Theme Variables */
+:root {
+  --primary-color: #000;
+  --secondary-color: #fff;
+  --primary-bg-color: #fff;
+  --secondary-bg-color: #000;
+}
+
+/* Light Theme */
+.light-theme {
+  --primary-color: #000;
+  --secondary-color: #fff;
+  --primary-bg-color: #fff;
+  --secondary-bg-color: #000;
+}
+
+/* Dark Theme */
+.dark-theme {
+  --primary-color: #fff;
+  --secondary-color: #000;
+  --primary-bg-color: #000;
+  --secondary-bg-color: #fff;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 1px solid var(--secondary-color);
+  color: var(--primary-color);
+  height: 120px;
+  background-color: var(--primary-bg-color);
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo1 {
+  width: 15.8rem;
+  height: 5.8rem;
+  object-fit: cover;
+}
+
+
+
+.login {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #000;
+  font-weight: 600;
+  font-size: 1.8rem;
+  padding: 10px 20px;
+  margin: 0;
+}
+
+.login:hover {
+  background-color: #C7C7FF;
+  color: white;
+  border-radius: 10px;
+}
+
+.appName {
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-left: 1rem;
+  color: var(--primary-color);
+}
+
+.desktop-menu {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.menu {
+  padding: 0 10px;
+  font-weight: 500;
+  font-size: 1.8rem;
+}
+
+.menu .ant-menu-item {
+  color: var(--primary-color);
+  background: transparent;
+}
+
+.menu .ant-menu-item:hover,
+.menu .ant-menu-item-selected {
+  background-color: #696868;
+  color: white;
+}
+
+.drawer-menu {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.drawer-menu .ant-menu-item {
+  color: var(--primary-color);
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+}
+
+.iconSvg {
+  margin-left: 1rem;
+  color: var(--primary-color);
+}
+
+.toggleButton {
+  display: none;
+}
+
+
+/* Media Queries */
+@media (max-width: 1024px) {
+  .desktop-menu {
+    display: none;
+  }
+
+  .toggleButton {
+    display: block;
+    background-color: #8DF079;
+    color: white;
+    border: none;
+  }
+
+  .toggleButton:hover {
+    background-color: #8DF079;
+  }
+}
+
+@media (max-width: 768px) {
+  .desktop-menu {
+    display: none;
+  }
+
+  .toggleButton {
+    display: block;
+    background-color: #8DF079;
+    color: white;
+  }
+}

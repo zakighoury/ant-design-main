@@ -1,0 +1,67 @@
+.building-list {
+  width: 100%;
+  height: 100vh;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  padding: 20px; /* Add padding for spacing */
+}
+.empty-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  text-align: center; /* Center text */
+}
+
+.ant-empty {
+  font-size: 30px;
+  margin: 0; /* Remove default margin */
+}
+
+.anticon svg {
+  width: 36px;
+  height: 36px;
+  display: inline-block;
+}
+.building-list h1 {
+  margin-bottom: 20px;
+  font-size: 2rem; /* Increase font size for the heading */
+  color: #333; /* Darker color for better readability */
+}
+
+.building-card {
+  border-radius: 8px;
+  background-color: whitesmoke;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden; /* Ensure content stays within card boundaries */
+  height: 100%;
+  position: relative; /* For positioning the icon */
+}
+
+.building-card .ant-card-cover img {
+  height: 200px; /* Set a fixed height for the images */
+  object-fit: cover; /* Ensure the image covers the area without distortion */
+  width: 100%; /* Ensure the image stretches to fill the width of the card */
+}
+
+.card-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  padding: 5px;
+  z-index: 1; /* Ensure the icon is above other content */
+}
+
+.building-price {
+  font-size: 18px; /* Increase font size for the price */
+  font-weight: bold;
+  margin-top: 10px;
+  color: #333; /* Adjust color as needed */
+}
+.building-status {
+  text-transform: uppercase;
+}

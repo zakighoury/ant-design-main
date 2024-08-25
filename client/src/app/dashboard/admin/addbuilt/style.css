@@ -1,0 +1,105 @@
+/* style.css */
+
+.addToCartFormContainer {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 2em;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.cartInput {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #dcdcdc;
+  border-radius: 4px;
+  font-size: 1em;
+}
+
+.cartInput::placeholder {
+  color: #888;
+}
+
+.imagePreviewContainer {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.imagePreview {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.floorContainer,
+.slotContainer {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #dcdcdc;
+  border-radius: 4px;
+  background: #f9f9f9;
+}
+
+.floorContainer h3,
+.slotContainer h4 {
+  color: #333;
+}
+
+.cartButton {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  font-size: 1em;
+  transition: background-color 0.3s;
+  display: inline-block;
+}
+
+.cartButton:hover {
+  background-color: #0056b3;
+}
+
+.cartButton:focus {
+  outline: none;
+}
+
+input[type="file"] {
+  margin-bottom: 15px;
+}
+
+textarea {
+  resize: vertical;
+  height: 100px;
+}
+
+@media (max-width: 768px) {
+  .addToCartFormContainer {
+    padding: 15px;
+  }
+
+  .cartInput {
+    padding: 10px;
+  }
+
+  .cartButton {
+    padding: 8px 12px;
+  }
+}
