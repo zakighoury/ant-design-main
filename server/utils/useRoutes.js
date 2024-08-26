@@ -1,9 +1,4 @@
 const useRoutes = (app) => {
-  // Welcome Route
-  app.get("/", (req, res) => {
-    res.send("welcome");
-  });
-
   // User Routes
   const userRouter = require("../routes/user");
   app.use("/api/users", userRouter);

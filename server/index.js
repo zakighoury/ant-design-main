@@ -6,7 +6,7 @@ const app = express();
 const server = http.createServer(app); // Create HTTP server
 const io = socketIo(server, {
   cors: {
-    origin: "http://localhost:3000",
+    origin: "https://client-murex-six.vercel.app",
     methods: ["GET", "POST", "PUT", "PATCH", "DELETE"],
     credentials: true,
   },
@@ -40,6 +40,9 @@ app.use("/admin/api/buildings", adminbuildingsRouter);
 app.get("/", (req, res) => {
   res.send("Hello World!");
 });
+module.exports = (req, res) => {
+  return app(req, res);
+};
 const connectDB = require("./utils/db");
 connectDB().then(() => {
   // Starting Server
